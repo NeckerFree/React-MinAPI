@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "S4I6SaUvBn3ipXihEDOOUqdPdBoxWNCWz0sjl2pRjoc8sql3939gPWEYdAr/ydMkLD252NMPhW2Omhvb9aIYKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\react-minapi.back\\react-minapi.back.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elio_\\.nuget\\packages\\asp.versioning.abstractions\\6.1.0\\asp.versioning.abstractions.6.1.0.nupkg.sha512",
+    "C:\\Users\\elio_\\.nuget\\packages\\asp.versioning.http\\6.1.0\\asp.versioning.http.6.1.0.nupkg.sha512",
+    "C:\\Users\\elio_\\.nuget\\packages\\litedb\\5.0.12\\litedb.5.0.12.nupkg.sha512",
+    "C:\\Users\\elio_\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\elio_\\.nuget\\packages\\nanoid\\2.1.0\\nanoid.2.1.0.nupkg.sha512",
+    "C:\\Users\\elio_\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
