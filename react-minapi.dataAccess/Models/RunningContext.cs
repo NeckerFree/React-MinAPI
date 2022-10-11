@@ -2,7 +2,7 @@
 
 namespace react_minapi.dataAccess.Models
 {
-    internal class RunningContext : DbContext
+    public class RunningContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

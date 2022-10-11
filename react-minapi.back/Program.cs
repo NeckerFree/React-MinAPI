@@ -1,6 +1,7 @@
 using Asp.Versioning;
 using Asp.Versioning.Conventions;
 using LiteDB;
+using react_minapi.dataAccess.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,4 +56,12 @@ app.MapPost("/urls", (ShortUrl shortUrl, HttpContext ctx, ILiteDatabase db) =>
     }
     return Results.BadRequest(new { ErrorMessage = "Invalid Url" });
 });
+
+app.MapPost("/users", async (User user, RunningContext db) =>
+{
+    db.Users.Add(user);
+    await db.SaveChangesAsync();
+    return Results.Created($"/user/{user.Id}", user);
+});
+
 app.Run();
