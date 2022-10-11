@@ -1,14 +1,14 @@
 using Asp.Versioning;
 using Asp.Versioning.Conventions;
 using LiteDB;
+using Microsoft.EntityFrameworkCore;
 using react_minapi.dataAccess.Models;
+using react_minapi.dataAccess.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//you could also get it from IConfiguration interface
-var connectionString = "running.db";
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-//add as a singleton - it's a single file with a single access point
 builder.Services.AddSingleton<ILiteDatabase, LiteDatabase>(
    x => new LiteDatabase(connectionString));
 
@@ -28,7 +28,6 @@ var versionSet = app.NewApiVersionSet()
                     .HasApiVersion(2.0)
                     .ReportApiVersions()
                     .Build();
-//app.MapGet("/", () => "Hello World!");
 app.MapGet("/GetMessage", () => "This is an example of a minimal API").WithApiVersionSet(versionSet).HasApiVersion(new ApiVersion(2, 0));
 app.MapGet("/GetString", () => "This is my string of a minimal API").WithApiVersionSet(versionSet).HasApiVersion(new ApiVersion(1, 0));
 app.MapGet("/GetText", () => "This is another example of a minimal API").WithApiVersionSet(versionSet).IsApiVersionNeutral();
@@ -56,12 +55,18 @@ app.MapPost("/urls", (ShortUrl shortUrl, HttpContext ctx, ILiteDatabase db) =>
     }
     return Results.BadRequest(new { ErrorMessage = "Invalid Url" });
 });
-
-app.MapPost("/users", async (User user, RunningContext db) =>
+app.MapGet("/users", () =>
 {
-    db.Users.Add(user);
-    await db.SaveChangesAsync();
-    return Results.Created($"/user/{user.Id}", user);
+    UserRepository userRepository = new UserRepository(new RunningContext());
+    var users = userRepository.Get();
+    return Results.Ok(users);
+});
+app.MapPost("/users", (User user) =>
+{
+    UserRepository userRepository = new UserRepository(new RunningContext());
+    User newUser= userRepository.Create(user);
+    
+    return Results.Created($"/users/{newUser.Id}", newUser);
 });
 
 app.Run();

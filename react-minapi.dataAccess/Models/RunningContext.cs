@@ -8,7 +8,7 @@ namespace react_minapi.dataAccess.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite("DataSource=./DB/RunningDb.db");
+            optionsBuilder.UseSqlite(@"DataSource=C:\Elio\DB\RunningDB.db");
         }
     }
 }
