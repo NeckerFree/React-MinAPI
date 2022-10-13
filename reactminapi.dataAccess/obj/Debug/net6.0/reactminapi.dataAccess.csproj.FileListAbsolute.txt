@@ -1,0 +1,14 @@
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\bin\Debug\net6.0\reactminapi.dataAccess.deps.json
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\bin\Debug\net6.0\reactminapi.dataAccess.runtimeconfig.json
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\bin\Debug\net6.0\reactminapi.dataAccess.dll
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\bin\Debug\net6.0\reactminapi.dataAccess.pdb
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.csproj.AssemblyReference.cache
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.AssemblyInfoInputs.cache
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.AssemblyInfo.cs
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.csproj.CoreCompileInputs.cache
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.dll
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\refint\reactminapi.dataAccess.dll
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.pdb
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\reactminapi.dataAccess.genruntimeconfig.cache
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.dataAccess\obj\Debug\net6.0\ref\reactminapi.dataAccess.dll
