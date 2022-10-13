@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4mWt1sB+wzB5ttOVEclW/YNerJ4SNZwESdqDV0L6DX5IUWIqGMfY3klWWgDNwmNGoH3kjxJFUsjf7wcGW/BeFQ==",
+  "dgSpecHash": "LGyucW6aOv4TMg0P6SajwqIXUYaOh7X8bKqJQJaTslN1Zwxbe+jGQ/mc/fD27XOjhW6bhWlN1qIezKIRXYORYw==",
   "success": true,
-  "projectFilePath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\react-minapi.dataAccess\\reactminapi.dataAccess.csproj",
+  "projectFilePath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\reactminapi.dataAccess\\reactminapi.dataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elio_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\elio_\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.9\\microsoft.data.sqlite.core.6.0.9.nupkg.sha512",

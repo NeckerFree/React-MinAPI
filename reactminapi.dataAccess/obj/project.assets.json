@@ -1631,11 +1631,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Elio\\Development\\Projects\\React-MinAPI\\react-minapi.dataAccess\\reactminapi.dataAccess.csproj",
+      "projectUniqueName": "C:\\Elio\\Development\\Projects\\React-MinAPI\\reactminapi.dataAccess\\reactminapi.dataAccess.csproj",
       "projectName": "reactminapi.dataAccess",
-      "projectPath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\react-minapi.dataAccess\\reactminapi.dataAccess.csproj",
+      "projectPath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\reactminapi.dataAccess\\reactminapi.dataAccess.csproj",
       "packagesPath": "C:\\Users\\elio_\\.nuget\\packages\\",
-      "outputPath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\react-minapi.dataAccess\\obj\\",
+      "outputPath": "C:\\Elio\\Development\\Projects\\React-MinAPI\\reactminapi.dataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,2 @@
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.front\obj\Debug\reactminapi.front.esproj.SuggestedBindingRedirects.cache
+C:\Elio\Development\Projects\React-MinAPI\reactminapi.front\obj\Debug\reactminapi.front.esproj.CoreCompileInputs.cache
