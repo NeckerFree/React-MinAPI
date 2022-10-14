@@ -9,22 +9,8 @@ namespace reactminapi.dataAccess.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite(@"DataSource=C:\Elio\DB\RunningDB.db");
+            optionsBuilder.UseSqlite(@"DataSource=C:\Temp\RunningDB.db");
         }
-    //    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    //    {
-    //        modelBuilder
-    //            .Entity<Training>()
-    //            .Property(e => e.Feel)
-    //            .HasConversion(
-    //                v => v.ToString(),
-    //                v => (EnumFeel)Enum.Parse(typeof(EnumFeel), v));
-
-    //        modelBuilder.Entity<Training>()
-    //.Property(e => e.Date)
-    //.HasConversion(
-    //    v => v,
-    //    v => new DateTime(v.Year, v.Month, v.Day).ToShortDateString();
-    //    }
+  
     }
 }
