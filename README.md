@@ -1,30 +1,43 @@
-﻿# React-MinAPI (track training)
+# React-MinAPI (Track training App)
 
 ## Description
 
 > The purpuse of this project is to implement .NET Minimal Api using SQLite with Code First Model.	
-> In addition it is implemented a ReactJS project to consume paginated data.
+> In addition it is implemented a ReactJS project to consume paginated data in client side.
 
-### Backend followed process (.NET Minimal Api):
+### Projects 
+
+## reactminapi.dataAccess
 1. Create DB Models: 
-- User, 
+- User 
 - Training 
-
-2. Reference these DB entities in the class RunningContext of dataAccess project, and in Package manager console of this project:
-
-- Create initial migration using: `add-migration relation-user-training`
+2. Create local SQLite database RunningDB.db 
+3. Create RunningContext and inherit from `DbContext` 
+-  add the connection string: `optionsBuilder.UseSqlite(@"DataSource=C:\Temp\RunningDB.db");`
+-  reference `DbSet<User>` and `DbSet<Training>`
+4. In the Package Manager Console of this project:
+- Create initial migration using: `add-migration initial`
 - Update database model with: `update-database` to reflect Model First in database
+After this the DB and tables should be created. 
+5. Create CRUD Repositories: TrainingRepository and UserRepository
 
-## Built With
+## reactminapi.back (.NET Minimal Api Backend)
+1. Create project: https://www.c-sharpcorner.com/article/two-ways-to-create-minimal-apis-in-net-6/
+2. Add reference to dataAccess project 
+3. Modify Program.cs to expose Get an Post Web methods.
+4. Test this minimal API
 
-- React JS 
-- C#.NET 
-- .NET Minimal API
-- SQLite
-- HTML 
-- CSS
+## reactminapi.front
+1. Create React project: https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-react?view=vs-2022
+2. Reference API project
+2. Implement pagination in App.js
 
-## Project Set up
+### Built With
+- SQLite (Code First)
+- C#.NET Minimal API
+- ReactJS.Net 
+
+### Project Set up
 
 Clone Repository using
 
@@ -73,6 +86,11 @@ Feel free to check the [Issues page](https://github.com/NeckerFree/React-MinAPI/
 
 ## Show your support
 
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
 Give a ⭐️ if you like this project!
 
 ## 📝 License
