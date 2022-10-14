@@ -38,17 +38,3 @@
     }
 }
 
-.footer-container .indexes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.pager {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-    .container {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 500px;
-}
