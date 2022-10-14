@@ -44,9 +44,9 @@ const App = () => {
         setLoading(false);
      }, []);
  
-    const x = (currentPage * pageSize) - pageSize;
-    const y = x + pageSize;
-    const currentTrainings = trainings.slice(x, y);
+    const initialIndex = (currentPage * pageSize) - pageSize;
+    const finalIndex = initialIndex + pageSize;
+    const currentTrainings = trainings.slice(initialIndex, finalIndex);
     return (
         <div className="container">
             <div className="header-container">
